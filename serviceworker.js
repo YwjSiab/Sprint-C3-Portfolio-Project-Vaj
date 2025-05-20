@@ -6,6 +6,9 @@ const CACHE_NAME = "portfolio-cache-v1"; // Unique cache name
 const FILES_TO_CACHE = [
   "/Sprint-C3-Portfolio-Project-Vaj/",
   "/Sprint-C3-Portfolio-Project-Vaj/index.html",
+  "/Sprint-C3-Portfolio-Project-Vaj/Projects.html",
+  "/Sprint-C3-Portfolio-Project-Vaj/Resume.html",
+  "/Sprint-C3-Portfolio-Project-Vaj/Contact.html",
   "/Sprint-C3-Portfolio-Project-Vaj/main.css", // CSS styles
   "/Sprint-C3-Portfolio-Project-Vaj/script.js", // App logic
   "/Sprint-C3-Portfolio-Project-Vaj/manifest.json", // PWA manifest
