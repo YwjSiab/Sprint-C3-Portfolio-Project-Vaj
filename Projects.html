@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png" type="image/png">
+<title>Projects</title>
+<link href="main.css" rel="stylesheet" />
+<script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <div class="projects-page-container">
+        <!-- Top Section: Sidebar (Links) + Project Details -->
+        <div class="top-section">
+            <!-- Sidebar Navigation (Fixed on Left) -->
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <h2><asideText>Links to My</asideText></h2>
+                        <li><a href="index.html"><strong>Home</strong></a></li>
+                        <li><a href="Resume.html">Resume</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </aside>
+    
+            <!-- Project Details Section -->
+            <section id="projectDetailsContainer">
+                <h2>Project Details</h2>
+                <p>Select a project to view details.</p>
+                <div id="projectDetails"></div>
+            </section>
+        </div>
+    
+        <!-- Projects Section (Starts Below Links and Project Details) -->
+        <section id="portfolio">
+            <h2>My Projects</h2>
+            <label for="filterDropdown">Filter by Category:</label>
+            <select id="filterDropdown">
+                <option value="All">All</option>
+                <option value="Web Development">Web Development</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Responsive Design">Responsive Design</option>
+            </select>
+            <div id="projectContainer"></div>
+        </section>
+
+        <section id="projectSubmission">
+            <h2>Submit a New Project</h2>
+            <p id="formSuccess" style="color: #32CD32; font-weight: bold; display: none;"></p>
+            <p id="formError" style="color: #ffd700; font-weight: bold;"></p>
+        </section>              
+    </div>
+    
+     
+<footer>
+    <Address>
+        Ywj Siab Vaj &#9830; 2012 Weston Avenue &#9830; Schofield, WI 54476
+    </Address>
+</footer>
+</body>

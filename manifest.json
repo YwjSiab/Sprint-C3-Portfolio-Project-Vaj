@@ -1,0 +1,33 @@
+{
+  "name": "My Portfolio",
+  "short_name": "Portfolio",
+  "start_url": "/Sprint-C3-Portfolio-Project-Vaj/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#333333",
+  "icons": [
+    {
+      "src": "/Sprint-C3-Portfolio-Project-Vaj/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Sprint-C3-Portfolio-Project-Vaj/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "View Projects",
+      "short_name": "Projects",
+      "url": "/Sprint-C3-Portfolio-Project-Vaj/Projects.html",
+      "icons": [
+        {
+          "src": "/Sprint-C3-Portfolio-Project-Vaj/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

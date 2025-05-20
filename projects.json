@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "title": "Tri and Succeed Sports",
+      "description": "Worked on website layout and text styling. Adjusted fonts, images, and positioning.",
+      "techStack": ["HTML", "CSS"],
+      "category": "Web Development",
+      "image": "tss_logo.png"
+    },
+    {
+      "id": 2,
+      "title": "Trusted Friends DayCare",
+      "description": "Styled the website for different screen sizes (responsive design).",
+      "techStack": ["HTML", "CSS", "Responsive Design"],
+      "category": "Responsive Design",
+      "image": "tf_logo.png"
+    },
+    {
+      "id": 3,
+      "title": "Slate & Pencil Tutoring",
+      "description": "Utilized grid layouts for better positioning and website organization.",
+      "techStack": ["HTML", "CSS", "Grid Layout"],
+      "category": "UI/UX Design",
+      "image": "slate-and-pencil_logo.png"
+    }
+  ]
+  
