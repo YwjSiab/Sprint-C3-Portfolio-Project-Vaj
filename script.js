@@ -122,22 +122,27 @@ document.addEventListener('DOMContentLoaded', async () => {
         .catch((err) => console.error("❌ SW registration failed:", err)); // Log registration failure
       }
 
-      // 🛠️ Setup the PWA install button logic
+      // 🛠️ Listen for the PWA installation event
       let deferredPrompt;
-
-      // Listen for the browser's beforeinstallprompt event (PWA install available)
       window.addEventListener("beforeinstallprompt", (e) => {
-        e.preventDefault(); // Prevent default mini-infobar
-        deferredPrompt = e; // Save the event to trigger later
+        e.preventDefault(); // Prevent the default mini-infobar from appearing
+        deferredPrompt = e; // Save the event for manual triggering
 
-        // Show custom install button
-        document.querySelector("#installBtn").style.display = "block";
+          // 📌 Find the install button (if it exists on this page)
+          const installBtn = document.querySelector("#installBtn");
+
+        // ✅ Only proceed if the button is actually present
+        if (installBtn) {
+          // Make the install button visible
+          installBtn.style.display = "block";
+
+          // When the button is clicked, show the install prompt
+          installBtn.addEventListener("click", () => {
+            deferredPrompt.prompt();
+          });
+        }
       });
 
-      // When the custom install button is clicked, show the prompt
-      document.querySelector("#installBtn").addEventListener("click", () => {
-        deferredPrompt.prompt(); // Trigger install prompt
-      });
 
 
 } catch (error) {
