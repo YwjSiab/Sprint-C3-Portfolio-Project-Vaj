@@ -1,0 +1,353 @@
+@charset "utf-8";
+/*
+   Name: Ywj Siab Vaj
+   Date: 11/8/2022
+
+*/
+/* HTML Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(25, 122, 247);
+    font-size: 12px;
+ }
+ 
+ aside nav ul li{
+   list-style-type: none;
+ }
+ 
+ /* Page Body Styles */
+ 
+ body {
+  background-color: rgb(25, 122, 247);
+  font-family: Verdana, Geneva, Arial, sans-serif; 	
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%; /* ✅ Changed from 960px */
+  box-sizing: border-box;
+}
+
+body div {
+  width: 100%;
+  max-width: 960px; /* optional */
+  margin: 0 auto;
+}
+ 
+ aside {
+    background-color: rgb(25, 233, 247);
+    float: left;
+	margin-right: 15%;
+	padding: 20px;
+	width: 26%;
+    border-radius: 25px;
+}
+nav {
+   float: left;
+}
+
+aside nav ul li a {
+   list-style-type: none;
+   color: rgb(247, 39, 25);
+   font-size: 1.5em;
+ }
+ 
+ aside nav ul li a:hover {
+   color: rgb(86, 0, 179);
+ }
+
+ aside nav ul li a:active {
+   color: rgb(0, 179, 133);
+ }
+
+aside h2 {
+   background-color: rgb(25, 233, 247);
+}
+
+aside h2 {
+   color: rgb(247, 39, 25);
+}
+
+asideText {
+   font-size: 0.75em italicized;
+}
+
+p {
+   color: white;
+   font-size: 1em;
+}
+
+section a:link {
+   color: rgb(25, 233, 247);
+   font-size: 1em;
+}
+
+section p {
+   font-size: 1.15em;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: wheat;
+}
+
+section h2 {
+   color: white;
+}
+
+footer {
+    background: url(Footer.jpg) 100%/cover no-repeat;
+    border: 1px solid rgb(25, 233, 247);
+}
+
+footer address {
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+}
+
+address li{
+   color: white;
+   font-size: 1.25em;
+}
+address li a:link {
+   color: rgb(25, 233, 247);
+}
+
+article li {
+   color: white;
+   font-size: 1.15em;
+}
+
+article p {
+   font-size: 1.25em;
+   font-weight: bold;
+   color: rgb(241, 232, 181);
+}
+
+section {
+   font-size: 1.2em;
+   margin: 10px;
+   color: rgb(255, 232, 233);
+}
+
+article h2 {
+   font-size: 1.2em;
+   color:ivory;
+}
+
+body article img {
+	display: block;
+	width: 50%;
+}
+
+/* Form Styles*/
+
+form#businessinfo {
+   display: flex;
+   flex-flow: row wrap;
+}
+
+form#businessinfo > fieldset {
+   background-color: rgb(241, 232, 181);
+   border-radius: 20px;
+   flex: 1 1 300px;
+   font-size: 0.85em;
+   padding: 10px;
+   margin: 10px;
+}
+
+div.formRow {
+   display: flex;
+   flex-flow: row wrap;
+   margin: 7px 0px;
+}
+
+div.formRow > * {
+   flex: 1 1 150px;
+}
+
+legend {
+   background-color: rgb(179, 20, 25);
+   color: white;
+   padding: 5px;
+}
+
+textarea {
+   margin-top: 10px;
+   height: 100px;
+   width: 95%;
+}
+
+div#buttons {
+   text-align: center;
+   width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+   font-size: 1.2em;
+   padding: 5px;
+   margin: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+   background-color: rgb(220, 255, 220);
+}
+
+input#name:focus:valid, input#zip:focus:valid, input#phone:focus:valid, input#mail:focus:valid {
+   background: rgb(220, 255, 220) url(rb_valid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid, input#zip:focus:invalid, input#phone:focus:invalid, input#mail:focus:invalid {
+   background: rgb(255, 232, 233) url(rb_invalid.png) bottom right/contain no-repeat;
+}
+
+/* Main Page Layout */
+.projects-page-container {
+   display: flex;
+   flex-direction: column; /* Stack elements vertically */
+   width: 100%;
+   align-items: flex-start;
+}
+
+/* Top Section: Links and Project Details side by side */
+.top-section {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   width: 100%;
+   gap: 20px;
+}
+
+/* Sidebar: Fixed Width */
+.sidebar {
+   width: 25%; /* Sidebar stays fixed */
+   min-width: 200px; /* Prevent shrinking */
+   background-color: rgb(25, 233, 247);
+   padding: 20px;
+   border-radius: 8px;
+}
+
+/* Project Details: Takes up remaining space */
+#projectDetailsContainer {
+   flex-grow: 1; /* Takes the rest of the space */
+   background-color: rgb(25, 233, 247);
+   padding: 15px;
+   border-radius: 8px;
+   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects Section: Full Width Below */
+#portfolio {
+   width: 100%;
+   text-align: left; /* Align projects from the left */
+   margin-top: 20px;
+}
+
+/* Ensure Project Cards Start from the Left */
+#projectContainer {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start; /* Ensures projects start from the left */
+   gap: 20px;
+   width: 100%;
+}
+
+.project-detail-image {
+   width: 50%;
+   max-width: 600px; /* Adjust as needed */
+   height: auto;
+   display: block;
+   margin: 10px 0;
+   border-radius: 8px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#formError {
+   color: #ff4c4c;
+   font-weight: bold; /* Makes text bold */
+   font-size: 1.1em; /* Slightly increase text size */
+   margin-top: 5px;
+}
+
+/* Flex container for Technologies & Project Link */
+.form-flex-container {
+   display: flex;
+   gap: 20px; /* Space between inputs */
+   align-items: center;
+   margin-top: 10px;
+}
+
+/* Ensure input groups (Technologies & Project Link) take equal width */
+.input-group {
+   flex: 1; /* Ensures both elements take equal space */
+   display: flex;
+   flex-direction: column;
+}
+
+/* Ensure each field appears on its own line */
+#projectForm label {
+   display: block;
+   margin-top: 10px;
+   font-weight: bold;
+}
+
+/* Ensure inputs and textareas take full width */
+#projectForm input,
+#projectForm textarea {
+   width: 100%;
+   padding: 8px;
+   margin: 5px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+/* Style for file upload section */
+.file-upload-container {
+   display: flex;
+   align-items: center;
+   gap: 10px; /* Space between label and input */
+   margin-top: 10px;
+}
+
+.file-upload-container label {
+   font-weight: bold;
+   white-space: nowrap; /* Prevent label from wrapping */
+}
+
+.project-card.touched {
+  outline: 2px solid #007BFF;
+  transition: outline 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  aside {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  nav {
+    float: none;
+    width: 100%;
+  }
+
+  .top-section {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: unset;
+  }
+
+  #projectDetailsContainer {
+    width: 100%;
+  }
+
+  .project-detail-image {
+    width: 100%;
+  }
+}
